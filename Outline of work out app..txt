@@ -1,0 +1,17 @@
+Home page
+Work out app -- header
+Search boxes for exercise-- input text feild
+Button that add the work out to your day.
+
+My excersises  --- tab one 
+Default current today
+Calender to select the day to apply the work out on
+Show current day list of work outs. 
+
+Trend --tab two
+
+7 days trend of work outs. 
+track PR number 
+show seven day work.
+
+
