@@ -14,8 +14,8 @@ const port = process.env.PORT || 5000;
 
 serverApp.use(express.static('client/build'));
 
-serverApp.get('/forecast/:lat,:lon', function(request, response){
-    const url =`https://wger.de/api/v2/${API_KEY}`
+serverApp.get('/exercise', function(request, response){
+    const url =`https://wger.de/api/v2/exercise/${API_KEY}`
     axios.get(url)
     .then(res => {
         response.status(200).json(res.data);
