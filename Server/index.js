@@ -15,12 +15,17 @@ const port = process.env.PORT || 5000;
 serverApp.use(express.static('client/build'));
 
 serverApp.get('/exercise', function(request, response){
-    const url =`https://wger.de/api/v2/exercise/${API_KEY}`
-    axios.get(url)
+    const url =`https://wger.de/api/v2/exercise/?`
+    const config ={
+        headers: {'Accept': 'application/json',
+        'Authorization': `Token ${API_KEY}`}}
+    
+    axios.get(url,config)
     .then(res => {
         response.status(200).json(res.data);
     })
     .catch(err => {
+        console.log(err);
         response.status(500).json({
             msg:'Your stuff is broked.'
         });

@@ -1,0 +1,30 @@
+{
+  "name": "workout-app",
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "concurrently \"node server/\" \"cd client && npm start\"",
+    "prod": "cd client && npm run build && cd .. && node server",
+    "start": "nodemon server/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romulussenter/workout-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/romulussenter/workout-app/issues"
+  },
+  "homepage": "https://github.com/romulussenter/workout-app#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.2"
+  }
+}
