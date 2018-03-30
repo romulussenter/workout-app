@@ -1,10 +1,13 @@
 const workouts = [
     {
-        _id: '1',
-        name: 'bench',
-        reps: 5,
-        sets: 4
-    }
+
+    _id: '1111',
+    name: 'bench',
+    
+
+    },
+
+
 ];
 
 module.exports = workouts;
