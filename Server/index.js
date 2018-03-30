@@ -20,9 +20,7 @@ serverApp.use(workoutsRouter);
 
 serverApp.use(express.static('client/build'));
 
-serverApp.get('/', (req, res)=>{
-   res.send('YAY');
-});
+
     
 // serverApp.use(notFound);
 // serverApp.use(serverError);
